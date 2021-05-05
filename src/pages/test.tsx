@@ -1,7 +1,6 @@
 import {
   Button
 } from '@chakra-ui/react'
-import raceData from '../../data/nhkmile'
 import Link from 'next/link'
 import Layout from "../components/Layout";
 
@@ -19,9 +18,9 @@ async function  test(data: any){
 }
 
 function main(){
-  raceData.forEach((data)=>{
-    test(data)
-  })
+  //raceData.forEach((data)=>{
+  //  test(data)
+  //})
 }
 
 function Index(){
