@@ -1,59 +1,44 @@
 import {
-  Button,Wrap
-} from '@chakra-ui/react'
-import prisma from '../../lib/prisma'
-import { GetStaticProps } from "next";
-import raceData from '../../data/nhkmile'
-import {RaceResultTable} from '../components/RaceResultTable'
-import {FrameNumBar} from '../components/FrameNumBar'
-import RaceData from '../../@types/RaceData'
+  Text,
+  Heading,
+  Stack,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
+import Link from "next/link";
+import Layout from "../components/Layout";
 
-async function  test(data: any){
-  try {
-    const body = data
-    await fetch('/api/result', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    })
-  } catch (error) {
-    console.error(error)
-  }
+function Index() {
+  return (
+    <Layout>
+      <Stack p={4}>
+        <Heading size="lg">keiba data okiba 🐎</Heading>
+        <Text pt={4}>
+          競馬データ置き場。つくった人：@hukurouo_code        
+        </Text>
+        <Heading size="md" pt={4}>
+          過去20年のレース傾向
+        </Heading>
+        <UnorderedList pl={6}>
+          <ListItem>
+            <Link href="/race/nhkmile">
+              <a>NHKマイルカップ(G1)</a>
+            </Link>
+          </ListItem>
+        </UnorderedList>
+        <Heading size="md" pt={4}>
+          グラフで見る
+        </Heading>
+        <UnorderedList pl={6}>
+          <ListItem>
+            <Link href="/graph/nhkmile">
+              <a>NHKマイルカップ(G1)</a>
+            </Link>
+          </ListItem>
+        </UnorderedList>
+      </Stack>
+    </Layout>
+  );
 }
 
-function main(){
-  raceData.forEach((data)=>{
-    test(data)
-  })
-}
-
-const Index = ({raceData, raceData3}:{raceData: RaceData[], raceData3: RaceData[]}) => (
-  <div>
-    <Wrap spacing="20px" p="8px">
-      <FrameNumBar raceData={raceData} title="過去20年の1位の枠番"/>
-      <FrameNumBar raceData={raceData3} title="過去20年の1~3位の枠番"/>
-    </Wrap>
-    <RaceResultTable raceData={raceData}></RaceResultTable>
-    <Button mt={24} onClick={()=>{main()}}>exe</Button>
-  </div>
-)
-
-export default Index
-
-export const getStaticProps: GetStaticProps = async () => {
-  const raceData3 = await prisma.result.findMany({
-    where: { 
-      rank: { in: [1,2,3]} 
-    },
-  })
-  const raceData = await prisma.result.findMany({
-    where: { 
-      rank: 1,
-      //jockeyName: {contains: '武豊',}
-    },
-    orderBy: {
-      year: 'desc',
-    },
-  })
-  return { props: { raceData, raceData3 } }
-}
+export default Index;

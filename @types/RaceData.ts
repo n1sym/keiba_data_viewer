@@ -1,5 +1,6 @@
 type RaceData = {
   raceName: string;
+  year: number;
   rank: number;
   frameNumber: number;
   horseNumber: number;

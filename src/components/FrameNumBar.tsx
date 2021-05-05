@@ -39,6 +39,8 @@ export const FrameNumBar = (props: {raceData: RaceData[], title?: string}) => (
         <h2>{props.title}</h2>
         <Bar
           data={wrapper(props.raceData)}
+          width={400}
+          height={300}
           options={options}
         />
       </div>
