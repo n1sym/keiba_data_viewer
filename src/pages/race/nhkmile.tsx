@@ -1,10 +1,7 @@
 import {
   Heading,
   FormLabel,
-  Button,
-  FormHelperText,
   Wrap,
-  Switch,
   FormControl,
   Input,
   NumberInput,
@@ -14,15 +11,12 @@ import {
   NumberDecrementStepper,
   Stack,
   WrapItem,
-  HStack,
-  Checkbox, CheckboxGroup
 } from "@chakra-ui/react";
 import prisma from "../../../lib/prisma";
 import { GetStaticProps } from "next";
 import { RaceResultTable } from "../../components/RaceResultTable";
 import RaceData from "../../../@types/RaceData";
 import { useState } from "react";
-import Link from "next/link";
 import Layout from "../../components/Layout";
 
 function filter(

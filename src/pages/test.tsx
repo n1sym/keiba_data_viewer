@@ -18,9 +18,9 @@ async function  test(data: any){
 }
 
 function main(){
-  //raceData.forEach((data)=>{
-  //  test(data)
-  //})
+  [].forEach((data)=>{
+    test(data)
+  })
 }
 
 function Index(){
