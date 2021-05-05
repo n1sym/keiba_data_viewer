@@ -12,7 +12,6 @@ function Index() {
   return (
     <Layout>
       <Stack p={4}>
-        <Heading size="lg">keiba data okiba 🐎</Heading>
         <Text pt={4}>
           競馬データ置き場。つくった人：@hukurouo_code        
         </Text>

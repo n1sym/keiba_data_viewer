@@ -20,6 +20,16 @@ function wrapper(raceData:RaceData[]){
     datasets: [{
       label: 'total',
       data: frameNums,
+      backgroundColor: [
+        '#e8ecef',
+        '#5a544b',
+        '#f6bfbc',
+        '#a0d8ef',
+        '#f8e58c',
+        '#c1d8ac',
+        '#f9c89b',
+        '#fdeff2'
+      ],
       borderWidth: 1
     }]
   }

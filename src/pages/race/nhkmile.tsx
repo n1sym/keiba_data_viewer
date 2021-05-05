@@ -11,6 +11,7 @@ import {
   NumberDecrementStepper,
   Stack,
   WrapItem,
+  Text
 } from "@chakra-ui/react";
 import prisma from "../../../lib/prisma";
 import { GetStaticProps } from "next";
@@ -18,6 +19,7 @@ import { RaceResultTable } from "../../components/RaceResultTable";
 import RaceData from "../../../@types/RaceData";
 import { useState } from "react";
 import Layout from "../../components/Layout";
+import Link from "next/link";
 
 function filter(
   raceData: RaceData[],
@@ -55,9 +57,13 @@ function Index({ raceData }: { raceData: RaceData[]; raceData3: RaceData[] }) {
 
   return (
     <Layout>
-      <Heading py="4" px={4} size="lg">
+      <Heading py={8} px={4} size="md">
         NHKマイルカップ
       </Heading>
+      <Text color="blue.500"　px={4}>
+        <Link href="/graph/nhkmile">
+              <a>グラフで傾向を見る</a>
+            </Link></Text>
       <Wrap spacing={8} px={4} pt={4}>
         <WrapItem>
           <FormControl>
