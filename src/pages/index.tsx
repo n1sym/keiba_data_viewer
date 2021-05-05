@@ -1,29 +1,12 @@
 import {
-  Button,
+  Button,Wrap
 } from '@chakra-ui/react'
 import prisma from '../../lib/prisma'
 import { GetStaticProps } from "next";
 import raceData from '../../data/nhkmile'
 import {RaceResultTable} from '../components/RaceResultTable'
-
-type RaceData = {
-  raceName: string;
-  rank: number;
-  frameNumber: number;
-  horseNumber: number;
-  horseName: string;
-  sexualAge: string;
-  weight: number;
-  jockeyName: string;
-  time: string;
-  passingOrder: string;
-  time3f: number;
-  oddsNum: number,
-  oddsRank: number,
-  horseWeight: number,
-  horseWeightDiff: number,
-  trainerName: string
-}
+import {FrameNumBar} from '../components/FrameNumBar'
+import RaceData from '../../@types/RaceData'
 
 async function  test(data: any){
   try {
@@ -44,21 +27,33 @@ function main(){
   })
 }
 
-//{userData}:{userData: {id: number, title: string, content: string}[]}
-
-const Index = ({raceData}:{raceData: RaceData[]}) => (
+const Index = ({raceData, raceData3}:{raceData: RaceData[], raceData3: RaceData[]}) => (
   <div>
-    <Button onClick={()=>{main()}}>exe</Button>
+    <Wrap spacing="20px" p="8px">
+      <FrameNumBar raceData={raceData} title="過去20年の1位の枠番"/>
+      <FrameNumBar raceData={raceData3} title="過去20年の1~3位の枠番"/>
+    </Wrap>
     <RaceResultTable raceData={raceData}></RaceResultTable>
+    <Button mt={24} onClick={()=>{main()}}>exe</Button>
   </div>
 )
 
 export default Index
 
 export const getStaticProps: GetStaticProps = async () => {
-  const raceData = await prisma.result.findMany({
-    where: { rank: 1 },
+  const raceData3 = await prisma.result.findMany({
+    where: { 
+      rank: { in: [1,2,3]} 
+    },
   })
-  console.log(raceData)
-  return { props: { raceData } }
+  const raceData = await prisma.result.findMany({
+    where: { 
+      rank: 1,
+      //jockeyName: {contains: '武豊',}
+    },
+    orderBy: {
+      year: 'desc',
+    },
+  })
+  return { props: { raceData, raceData3 } }
 }

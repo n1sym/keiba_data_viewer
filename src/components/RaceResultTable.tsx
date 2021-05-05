@@ -31,6 +31,7 @@ export const RaceResultTable = (props: {raceData: RaceData[]}) => (
     <Thead>
       <Tr>
         <Th>レース</Th>
+        <Th>順位</Th>
         <Th>枠番</Th>
         <Th>馬番</Th>
         <Th>馬名</Th>
@@ -47,6 +48,7 @@ export const RaceResultTable = (props: {raceData: RaceData[]}) => (
         return (
           <Tr key={index}>
             <Td>{item.raceName}</Td>
+            <Td>{item.rank}</Td>
             <Td>{item.frameNumber}</Td>
             <Td>{item.horseNumber}</Td>
             <Td>{item.horseName}</Td>

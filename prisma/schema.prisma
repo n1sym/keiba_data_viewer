@@ -33,6 +33,7 @@ model User {
 model Result {
   id              Int       @default(autoincrement()) @id
   raceName        String
+  year            Int
   rank            Int
   frameNumber     Int
   horseNumber     Int
