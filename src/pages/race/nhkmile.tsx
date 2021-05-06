@@ -26,13 +26,15 @@ function filter(
   minYear: number,
   maxYear: number,
   jockeyName: string,
-  minRank: number
+  minRank: number,
+  trainerName: string
 ) {
   const result = raceData
     .filter((data) => data.year >= minYear)
     .filter((data) => data.year <= maxYear)
     .filter((data) => data.rank <= minRank)
-    .filter((data) => data.jockeyName.includes(jockeyName));
+    .filter((data) => data.jockeyName.includes(jockeyName))
+    .filter((data) => data.trainerName.includes(trainerName));
   return result;
 }
 
@@ -41,6 +43,7 @@ function Index({ raceData }: { raceData: RaceData[]; raceData3: RaceData[] }) {
   const [maxYear, setMaxYear] = useState(2020);
   const [minRank, setMinRank] = useState(5);
   const [jockeyName, setJockeyName] = useState("");
+  const [trainerName, setTrainerName] = useState("");
 
   function handleMinYearChange(e: string) {
     setMinYear(Number(e));
@@ -53,6 +56,9 @@ function Index({ raceData }: { raceData: RaceData[]; raceData3: RaceData[] }) {
   }
   function handleNameChange(e: { target: { value: string } }) {
     setJockeyName(e.target.value);
+  }
+  function handleTrainerNameChange(e: { target: { value: string } }) {
+    setTrainerName(e.target.value);
   }
 
   return (
@@ -113,6 +119,17 @@ function Index({ raceData }: { raceData: RaceData[]; raceData3: RaceData[] }) {
         </FormControl>
         </WrapItem>
         <WrapItem>
+        <FormControl id="email" maxW={44}>
+          <FormLabel>調教師</FormLabel>
+          <Input
+            placeholder="名前を入力"
+            size="md"
+            value={trainerName}
+            onChange={(e) => handleTrainerNameChange(e)}
+          />
+        </FormControl>
+        </WrapItem>
+        <WrapItem>
         <FormControl>
 
             <FormLabel>順位</FormLabel> 
@@ -134,7 +151,7 @@ function Index({ raceData }: { raceData: RaceData[]; raceData3: RaceData[] }) {
           </WrapItem>
       </Wrap>
       <RaceResultTable
-        raceData={filter(raceData, minYear, maxYear, jockeyName, minRank)}
+        raceData={filter(raceData, minYear, maxYear, jockeyName, minRank, trainerName)}
       ></RaceResultTable>
     </Layout>
   );
