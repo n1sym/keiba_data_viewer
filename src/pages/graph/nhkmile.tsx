@@ -8,13 +8,13 @@ import Layout from "../../components/Layout";
 import Link from "next/link";
 
 function Index({
-  raceData,
-  raceData3,
-  horseWeightDiffData,
+  rank1results,
+  rank123results,
+  years10results,
 }: {
-  raceData: RaceData[];
-  raceData3: RaceData[];
-  horseWeightDiffData: RaceData[];
+  rank1results: RaceData[];
+  rank123results: RaceData[];
+  years10results: RaceData[];
 }) {
   return (
     <Layout>
@@ -24,15 +24,15 @@ function Index({
         <Link href="/race/nhkmile">
               <a>NHKマイルカップ(G1)　過去20年のレースデータ</a>
             </Link></Text>
-        <Text>↑のデータからグラフを作って傾向を読む。</Text>
+
         
         <Wrap spacing="20px" p={4}>
-          <FrameNumBar raceData={raceData} title="1着馬の枠番号" />
-          <FrameNumBar raceData={raceData3} title="1~3着馬の枠番号" />
+          <FrameNumBar raceData={rank1results} title="1着馬の枠番号" />
+          <FrameNumBar raceData={rank123results} title="1~3着馬の枠番号" />
         </Wrap>
 
         <Box w={800} p={4}>
-          <ScatterChart raceData={horseWeightDiffData} title="体重差分と着順"/>
+          <ScatterChart raceData={years10results} title="体重差分と着順"/>
         </Box>
 
       </Stack>
@@ -43,20 +43,20 @@ function Index({
 export default Index;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const raceData3 = await prisma.result.findMany({
+  const rank123results = await prisma.result.findMany({
     where: {
       rank: { in: [1, 2, 3] },
     },
   });
-  const raceData = await prisma.result.findMany({
+  const rank1results = await prisma.result.findMany({
     where: {
       rank: 1,
     },
   });
-  const horseWeightDiffData = await prisma.result.findMany({
+  const years10results = await prisma.result.findMany({
     where: {
-      year: { gte: 2010}
+      year: { gte: 2000}
     }
   })
-  return { props: { raceData, raceData3, horseWeightDiffData } };
+  return { props: { rank1results, rank123results, years10results } };
 };

@@ -15,8 +15,8 @@ function extract(raceData: RaceData[]) {
   scatterData.forEach((data)=>{
     scatterData.forEach((data2)=>{
       if (data.x === data2.x && data.y === data2.y) {
-        data.r = data.r + 2
-        data2.r = data2.r + 2
+        data.r = data.r + 1
+        data2.r = data2.r + 1
       }
     })
   })
