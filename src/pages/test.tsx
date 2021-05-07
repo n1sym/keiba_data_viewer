@@ -3,19 +3,19 @@ import {
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import Layout from "../components/Layout";
-import importData from "../../data/horse"
+
 
 async function  test(){
-  try {
-    const body = importData
-    await fetch('/api/horse_record', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(body),
-    })
-  } catch (error) {
-    console.error(error)
-  }
+//  try {
+//    const body = []
+//    await fetch('/api/horse_record', {
+//      method: 'POST',
+//      headers: { 'Content-Type': 'application/json' },
+//      body: JSON.stringify(body),
+//    })
+//  } catch (error) {
+//    console.error(error)
+//  }
 }
 
 function Index(){
