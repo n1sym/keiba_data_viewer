@@ -52,3 +52,33 @@ model Result {
 
   @@unique([raceName, horseNumber])
 }
+
+model HorseRecord {
+  id               Int       @default(autoincrement()) @id
+  horseName        String
+  date             String
+  raceCourse       String
+  weather          String
+  raceNumber       Int
+  raceName         String
+  horseTotalNumber Int
+  frameNumber      Int
+  horseNumber      Int
+  oddsNum          Float
+  oddsRank         Int
+  rank             Int
+  jockeyName       String
+  weight           Int
+  courseType       String
+  courseLength     Int
+  courseStatus     String
+  time             String
+  timeDiff         Float
+  passingOrder     String
+  pace             String
+  time3f           Float
+  horseWeight      Int
+  horseWeightDiff  Int
+
+  @@unique([raceCourse, horseNumber, date])
+}

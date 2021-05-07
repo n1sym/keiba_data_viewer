@@ -3,11 +3,12 @@ import {
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import Layout from "../components/Layout";
+import importData from "../../data/horse"
 
-async function  test(data: any){
+async function  test(){
   try {
-    const body = data
-    await fetch('/api/result', {
+    const body = importData
+    await fetch('/api/horse_record', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
@@ -15,12 +16,6 @@ async function  test(data: any){
   } catch (error) {
     console.error(error)
   }
-}
-
-function main(){
-  [].forEach((data)=>{
-    test(data)
-  })
 }
 
 function Index(){
@@ -40,7 +35,7 @@ function Index(){
     </ul>
       
      
-    <Button onClick={()=>{main()}}>exe</Button>
+    <Button onClick={()=>{test()}}>exe</Button>
   </Layout>
   )
 }

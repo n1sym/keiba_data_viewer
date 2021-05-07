@@ -1,4 +1,4 @@
-import { Wrap, Text, Stack, Heading, Box } from "@chakra-ui/react";
+import { Wrap, Text, Stack, Heading, Box, Image } from "@chakra-ui/react";
 import prisma from "../../../lib/prisma";
 import { GetStaticProps } from "next";
 import RaceData from "../../../@types/RaceData";
@@ -34,8 +34,11 @@ function Index({
         <Box w={800} p={4}>
           <ScatterChart raceData={years10results} title="体重差分と着順"/>
         </Box>
-
+        <Text>前哨戦と本戦の着順の関連性</Text>
+        
       </Stack>
+      <Image src="https://i.imgur.com/bKhBvJn.png" alt="graph" />
+      
     </Layout>
   );
 }

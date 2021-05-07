@@ -161,6 +161,11 @@ export default Index;
 
 export const getStaticProps: GetStaticProps = async () => {
   const raceData = await prisma.result.findMany({
+    where: {
+      raceName: {
+        contains: 'NHK',
+      }
+    },
     orderBy: [
       {
         year: "desc",
