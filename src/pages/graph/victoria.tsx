@@ -1,4 +1,4 @@
-import { Wrap, Text, Stack, Heading, Box, Image } from "@chakra-ui/react";
+import { Wrap, Text, Stack, Heading, Box } from "@chakra-ui/react";
 import prisma from "../../../lib/prisma";
 import { GetStaticProps } from "next";
 import RaceData from "../../../@types/RaceData";
