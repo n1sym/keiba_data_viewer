@@ -19,10 +19,10 @@ function Index({
   return (
     <Layout>
       <Stack p={4}>
-        <Heading size="md" my={4}>NHKマイルカップ</Heading>
+        <Heading size="md" my={4}>ヴィクトリアマイル</Heading>
         <Text color="blue.500">
         <Link href="/race/nhkmile">
-              <a>NHKマイルカップ(G1)　過去20年のレースデータ</a>
+              <a>過去20年のレースデータ</a>
             </Link></Text>
 
         
@@ -37,7 +37,6 @@ function Index({
         <Text>前哨戦と本戦の着順の関連性</Text>
         
       </Stack>
-      <Image src="https://i.imgur.com/bKhBvJn.png" alt="graph" />
       
     </Layout>
   );
@@ -51,7 +50,7 @@ export const getStaticProps: GetStaticProps = async () => {
       AND: [
         {rank: { in: [1, 2, 3] }},
         {raceName: {
-          contains: 'NHKマイル',
+          contains: 'ヴィクトリア',
         }}
       ]
       
@@ -62,7 +61,7 @@ export const getStaticProps: GetStaticProps = async () => {
       AND: [
         {rank: 1},
         {raceName: {
-          contains: 'NHKマイル',
+          contains: 'ヴィクトリア',
         }}
       ]
     },
@@ -72,7 +71,7 @@ export const getStaticProps: GetStaticProps = async () => {
       AND: [
         {year: { gte: 2000}},
         {raceName: {
-          contains: 'NHKマイル',
+          contains: 'ヴィクトリア',
         }}
       ]
       

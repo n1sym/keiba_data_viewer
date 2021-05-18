@@ -34,6 +34,11 @@ function Index() {
               <a>NHKマイルカップ(G1)</a>
             </Link>
           </ListItem>
+          <ListItem>
+            <Link href="/graph/victoria">
+              <a>ヴィクトリアマイル(G1)</a>
+            </Link>
+          </ListItem>
         </UnorderedList>
       </Stack>
     </Layout>

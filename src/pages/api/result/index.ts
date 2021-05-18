@@ -4,8 +4,9 @@ import prisma from '../../../../lib/prisma'
 // Required fields in body: title
 // Optional fields in body: content
 export default async function handle(req: any, res: any) {
-  const result = await prisma.result.create({
-    data: req.body
+  const result = await prisma.result.createMany({
+    data: req.body,
+    skipDuplicates: true
   })
   res.json(result)
 }

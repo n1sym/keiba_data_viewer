@@ -163,7 +163,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const raceData = await prisma.result.findMany({
     where: {
       raceName: {
-        contains: 'NHKマイル',
+        contains: 'ヴィクトリア',
       }
     },
     orderBy: [

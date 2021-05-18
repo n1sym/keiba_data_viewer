@@ -68,7 +68,7 @@ model HorseRecord {
   oddsRank         Int
   rank             Int
   jockeyName       String
-  weight           Int
+  weight           Float
   courseType       String
   courseLength     Int
   courseStatus     String
