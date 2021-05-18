@@ -1,6 +1,6 @@
 const data = [
   {
-    "title": "hit_rate",
+    "title": "的中率",
     "tan": "24.07%",
     "tan2": "46.3%",
     "huku": "44.44%",
@@ -16,7 +16,7 @@ const data = [
     "3huku5w": "22.22%"
   },
   {
-    "title": "recovery_rate",
+    "title": "回収率",
     "tan": "90.93%",
     "tan2": "318.61%",
     "huku": "75.56%",
@@ -32,7 +32,7 @@ const data = [
     "3huku5w": "112.39%"
   },
   {
-    "title": "total",
+    "title": "収支",
     "tan": -4900,
     "tan2": 118050,
     "huku": -13200,

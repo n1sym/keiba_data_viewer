@@ -16,12 +16,12 @@ function Index() {
           競馬データ置き場。つくった人：@hukurouo_code        
         </Text>
         <Heading size="md" pt={4}>
-          過去20年のレース傾向
+          
         </Heading>
         <UnorderedList pl={6}>
           <ListItem>
-            <Link href="/race/nhkmile">
-              <a>NHKマイルカップ(G1)</a>
+            <Link href="/forecast">
+              <a><Text color="blue.400">過去1年分の重賞レース予想結果</Text></a>
             </Link>
           </ListItem>
         </UnorderedList>
