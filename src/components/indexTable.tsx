@@ -30,7 +30,7 @@ const displayThColor = (index: number, item: any) => {
   return (
     <Tr key={index}>
       <Td minW={24}>{item.date}</Td>
-      <Td minW={24}><Link href={"results/" + item.dirName}><a><Text color="blue.500">{item.raceName}</Text></a></Link></Td>
+      <Td minW={40}><Link href={"results/" + item.dirName}><a><Text color="blue.500">{item.raceName}</Text></a></Link></Td>
       <Td minW={24}>{colorNum(item.tan)}</Td>
       <Td minW={24}>{colorNum(item.tan2)}</Td>
       <Td minW={24}>{colorNum(item.huku)}</Td>
