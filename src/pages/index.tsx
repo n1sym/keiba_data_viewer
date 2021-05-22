@@ -5,14 +5,23 @@ import {
 import Layout from "../components/Layout";
 import Link from "next/link";
 import {IndexTable} from "../components/indexTable"
+import Head from "next/head";
 
 function Index() {
   return (
     <Layout>
+      <Head>
+        <meta
+          property="og:image"
+          content={`https://firebasestorage.googleapis.com/v0/b/hukurouo.appspot.com/o/image%2Fwh.png?alt=media&token=5adfeea7-d45b-463e-b2f4-edceae1ab06e`}
+        />
+        <meta name="og:title" content={"Minerva results"} />
+        <meta name="twitter:card" content="summary" />
+      </Head>
       <Stack p={4}>
         
         <Text pt={4}>
-          競馬予想置き場　
+        <a href="https://github.com/hukurouo/Minerva" target="_blank" rel="noopener noreferrer">Minerva</a>に算出させた、競馬予想置き場　
         </Text>
         <HStack>
         <Text pt={4}>
