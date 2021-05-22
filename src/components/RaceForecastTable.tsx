@@ -32,7 +32,7 @@ const displayThColor = (index: number, item: any, type:string) => {
     <Tr key={index}>
       {displayString(item.oddsRank)}
       {displayString(item.rank)}
-      <Td>{item.horseNumber}</Td>
+      <Td isNumeric>{item.horseNumber}</Td>
       <Td minW={40}>{item.horseName}</Td>
       <Td minW={32}>{item.jockeyName}</Td>
       {displayTotal(item.roubdTotalPoint,index,type)}
@@ -49,7 +49,7 @@ const displayString = (str:any) => {
   if (str == null) {
     return <Td>{"-"}</Td>
   } else {
-    return <Td>{str}</Td>
+    return <Td isNumeric>{str}</Td>
   }
 }
 
