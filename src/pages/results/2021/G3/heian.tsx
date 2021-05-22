@@ -7,7 +7,7 @@ import {ForecastResultTable} from "../../../../components/ForecastResultTable"
 import Link from "next/link";
 import Head from "next/head";
 
-const title = "平安ステークス(G3)"
+const title = "第28回 平安ステークス(G3)"
 const result_url = "https://race.netkeiba.com/race/result.html?race_id=202107030511&rf=race_list"
 
 function Index() {

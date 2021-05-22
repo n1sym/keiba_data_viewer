@@ -5,7 +5,7 @@ import Layout from "../../../../components/Layout";
 import {RaceForecastTable} from "../../../../components/RaceForecastTable"
 import Head from "next/head";
 
-const title = "優駿牝馬(G1)"
+const title = "第82回 優駿牝馬(G1)"
 
 function Index() {
   return (
