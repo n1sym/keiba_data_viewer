@@ -15,7 +15,7 @@ function Index() {
           property="og:image"
           content={`https://firebasestorage.googleapis.com/v0/b/hukurouo.appspot.com/o/image%2Fwh.png?alt=media&token=5adfeea7-d45b-463e-b2f4-edceae1ab06e`}
         />
-        <meta name="og:title" content={"Minerva results"} />
+        <meta name="og:title" content={"競馬予想AI : Minerva"} />
         <meta name="twitter:card" content="summary" />
       </Head>
       <Stack p={4}>

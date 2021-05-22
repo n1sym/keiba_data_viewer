@@ -3,12 +3,21 @@ import {
 } from "@chakra-ui/react";
 import Layout from "../../../../components/Layout";
 import {RaceForecastTable} from "../../../../components/RaceForecastTable"
+import Head from "next/head";
 
 const title = "優駿牝馬(G1)"
 
 function Index() {
   return (
     <Layout>
+      <Head>
+        <meta
+          property="og:image"
+          content={`https://firebasestorage.googleapis.com/v0/b/hukurouo.appspot.com/o/image%2Fwh.png?alt=media&token=5adfeea7-d45b-463e-b2f4-edceae1ab06e`}
+        />
+        <meta name="og:title" content={"Minerva / " + title} />
+        <meta name="twitter:card" content="summary" />
+      </Head>
       <Stack p={4}>
         <Heading size="lg">{title}</Heading>
         <Text fontWeight="bold" pt={8}>単勝予想</Text>

@@ -5,6 +5,7 @@ import Layout from "../../../../components/Layout";
 import {RaceForecastTable} from "../../../../components/RaceForecastTable"
 import {ForecastResultTable} from "../../../../components/ForecastResultTable"
 import Link from "next/link";
+import Head from "next/head";
 
 const title = "平安ステークス(G3)"
 const result_url = "https://race.netkeiba.com/race/result.html?race_id=202107030511&rf=race_list"
@@ -12,6 +13,14 @@ const result_url = "https://race.netkeiba.com/race/result.html?race_id=202107030
 function Index() {
   return (
     <Layout>
+      <Head>
+        <meta
+          property="og:image"
+          content={`https://firebasestorage.googleapis.com/v0/b/hukurouo.appspot.com/o/image%2Fwh.png?alt=media&token=5adfeea7-d45b-463e-b2f4-edceae1ab06e`}
+        />
+        <meta name="og:title" content={"Minerva / " + title} />
+        <meta name="twitter:card" content="summary" />
+      </Head>
       <Stack p={4}>
         <Heading size="lg">{title}</Heading>
         <Text fontWeight="bold" pt={8}>レース結果</Text>
