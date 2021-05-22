@@ -39,7 +39,19 @@ function Index() {
 
 const result = [
   {
-    "date":"2021/05/22",
+    "date": "2021/05/16",
+    "dirName": "2021/G1/victoria",
+    "raceName": "ヴィクトリアマイル(G1)",
+    "tan": 300,
+    "tan2": -350,
+    "huku": 100,
+    "wide3box": 89,
+    "wide5box": -670,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "1-10-5"
+  },
+  {
+    "date": "2021/05/22",
     "dirName": "2021/G3/heian",
     "raceName": "平安S(G3)",
     "tan": -1000,
@@ -51,7 +63,7 @@ const result = [
     "1-2-3oddsRank": "2-1-3"
   },
   {
-    "date":"2021/05/23",
+    "date": "2021/05/23",
     "dirName": "2021/G1/oaks",
     "raceName": "優駿牝馬(G1)",
     "tan": "",
