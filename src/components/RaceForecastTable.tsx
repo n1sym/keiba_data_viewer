@@ -34,7 +34,7 @@ const displayThColor = (index: number, item: any, type:string) => {
       {displayString(item.rank)}
       <Td>{item.horseNumber}</Td>
       <Td minW={40}>{item.horseName}</Td>
-      <Td minW={24}>{item.jockeyName}</Td>
+      <Td minW={32}>{item.jockeyName}</Td>
       {displayTotal(item.roubdTotalPoint,index,type)}
       <Td>{item.horsePoint}</Td>
       <Td>{item.jockeyPoint}</Td>
