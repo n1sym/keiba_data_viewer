@@ -9,13 +9,14 @@ type typeLayout = {
 export default function Layout({ children }: typeLayout) {
   return (
     <div>
-      <HStack px={4} py={4} bg="gray.50">
+      <HStack px={4} py={4} >
         <Heading size="md">
           <Link href="/">
-            <a>keiba data okiba 🐎</a>
+            <a>Minerva v1.2</a>
           </Link>
         </Heading>
       </HStack>
+
       
 
       <main>{children}</main>

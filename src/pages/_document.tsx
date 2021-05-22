@@ -7,6 +7,7 @@ export default class Document extends NextDocument {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <title>Minerva</title>
         </Head>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
