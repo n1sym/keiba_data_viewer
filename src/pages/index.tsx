@@ -78,25 +78,25 @@ const result = [
     "date": "2021/05/30",
     "dirName": "2021/G1/derby",
     "raceName": "東京優駿(G1)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "4-1-9"
   },
   {
     "date": "2021/05/30",
     "dirName": "2021/G2/meguro",
     "raceName": "目黒記念(G2)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 110,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "8-2-15"
   }
 ].reverse()
 
