@@ -97,6 +97,30 @@ const result = [
     "wide5box": 110,
     "3huku5box": -1000,
     "1-2-3oddsRank": "8-2-15"
+  },
+  {
+    "date": "2021/06/05",
+    "dirName": "2021/G3/naruo",
+    "raceName": "鳴尾記念(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
+  },
+  {
+    "date": "2021/06/06",
+    "dirName": "2021/G1/yasuda",
+    "raceName": "安田記念(G1)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
