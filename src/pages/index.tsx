@@ -102,13 +102,13 @@ const result = [
     "date": "2021/06/05",
     "dirName": "2021/G3/naruo",
     "raceName": "鳴尾記念(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "8-9-5"
   },
   {
     "date": "2021/06/06",
