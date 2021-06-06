@@ -21,7 +21,7 @@ export const IndexTable = (props: { result: any[] }) => (
     </Tbody>
   </Table>
   </Box>
-  <Box overflowX={{base:"auto", sm:"auto", md: "auto"}} pt={8}>
+  <Box overflowX={{base:"auto", sm:"auto", md: "auto"}} pt={4} pb={12}>
   <Table size="sm" mt={8}>
     <Thead>
       <Tr>
@@ -66,12 +66,12 @@ const totalNum = (result: any) => {
     <>
     <Tr key={0}>
       <Td minW={24}><Text fontWeight="semibold">合計</Text></Td>
-      <Td minW={24}>{colorNum(totalTan)}</Td>
-      <Td minW={24}>{colorNum(totalTan2)}</Td>
-      <Td minW={24}>{colorNum(totalHuku)}</Td>
-      <Td minW={24}>{colorNum(totalWide3box)}</Td>
-      <Td minW={24}>{colorNum(totalWide5box)}</Td>
-      <Td minW={24}>{colorNum(total3huku5box)}</Td>
+      <Td minW={24}>{colorNumTotal(totalTan)}</Td>
+      <Td minW={24}>{colorNumTotal(totalTan2)}</Td>
+      <Td minW={24}>{colorNumTotal(totalHuku)}</Td>
+      <Td minW={24}>{colorNumTotal(totalWide3box)}</Td>
+      <Td minW={24}>{colorNumTotal(totalWide5box)}</Td>
+      <Td minW={24}>{colorNumTotal(total3huku5box)}</Td>
 
     </Tr>
     <Tr key={0}>
@@ -114,6 +114,19 @@ const colorNum = (num: any) => {
     }
   } else if (num == "") {
     return <Text> {"-"} </Text>
+  } else {
+    return <Text> {num} </Text>
+  }
+}
+
+const colorNumTotal = (num: any) => {
+  if (num > 0) {
+    const num_str = "+" + String(num)
+    if (num <= 1000) {
+      return <Text color="green.400"> {num_str} </Text>
+    } else {
+      return <Text color="green.400" fontWeight="semibold"> {num_str} </Text>
+    }
   } else {
     return <Text> {num} </Text>
   }
