@@ -45,7 +45,11 @@ const displayThColor = (index: number, item: any) => {
 const colorNum = (num: any) => {
   if (num > 0) {
     const num_str = "+" + String(num)
-    return <Text color="green.400"> {num_str} </Text>
+    if (num <= 1000) {
+      return <Text color="green.400"> {num_str} </Text>
+    } else {
+      return <Text color="green.400" fontWeight="semibold"> {num_str} </Text>
+    }
   } else if (num == "") {
     return <Text> {"-"} </Text>
   } else {
