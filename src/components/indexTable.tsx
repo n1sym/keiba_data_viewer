@@ -48,12 +48,12 @@ export const IndexTable = (props: { result: any[] }) => (
 
 const totalNum = (result: any) => {
   const count = result.length * 1000
-  const totalTan = result.map((item: any)=>{return item.tan}).reduce((prev: number, current:number)=>{return prev+current;})
-  const totalTan2 = result.map((item: any)=>{return item.tan2}).reduce((prev: number, current:number)=>{return prev+current;})
-  const totalHuku = result.map((item: any)=>{return item.huku}).reduce((prev: number, current:number)=>{return prev+current;})
-  const totalWide3box = result.map((item: any)=>{return item.wide3box}).reduce((prev: number, current:number)=>{return prev+current;})
-  const totalWide5box = result.map((item: any)=>{return item.wide5box}).reduce((prev: number, current:number)=>{return prev+current;})
-  const total3huku5box = result.map((item: any)=>{return item["3huku5box"]}).reduce((prev: number, current:number)=>{return prev+current;})
+  const totalTan = result.map((item: any)=>{if (item.tan != "-"){return Number(item.tan)}}).reduce((prev: number, current:number)=>{return prev+current;})
+  const totalTan2 = result.map((item: any)=>{if (item.tan2 != "-"){return Number(item.tan2)}}).reduce((prev: number, current:number)=>{return prev+current;})
+  const totalHuku = result.map((item: any)=>{if (item.huku != "-"){return Number(item.huku)}}).reduce((prev: number, current:number)=>{return prev+current;})
+  const totalWide3box = result.map((item: any)=>{if (item.wide3box != "-"){return Number(item.wide3box)}}).reduce((prev: number, current:number)=>{return prev+current;})
+  const totalWide5box = result.map((item: any)=>{if (item.wide5box != "-"){return Number(item.wide5box)}}).reduce((prev: number, current:number)=>{return prev+current;})
+  const total3huku5box = result.map((item: any)=>{if (item["3huku5box"] != "-"){return Number(item["3huku5box"])}}).reduce((prev: number, current:number)=>{return prev+current;})
 
   const recTan = String(Math.round(((count + totalTan) / count)*10000)/100) + "%"
   const recTan2 = String(Math.round(((count + totalTan2) / count)*10000)/100) + "%"

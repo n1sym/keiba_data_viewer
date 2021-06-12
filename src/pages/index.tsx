@@ -121,6 +121,30 @@ const result = [
     "wide5box": 6020,
     "3huku5box": 7860,
     "1-2-3oddsRank": "8-1-4"
+  },
+  {
+    "date": "2021/06/13",
+    "dirName": "2021/G3/epsom",
+    "raceName": "エプソムC(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
+  },
+  {
+    "date": "2021/06/13",
+    "dirName": "2021/G3/hakodates",
+    "raceName": "函館スプリントS(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
