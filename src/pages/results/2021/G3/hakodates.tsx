@@ -8,7 +8,7 @@ import Link from "next/link";
 import Head from "next/head";
 
 const title = "第28回 函館スプリントS(G3)"
-const result_url = ""
+const result_url = "https://race.netkeiba.com/race/result.html?race_id=202101010211"
 
 function Index() {
   return (
@@ -40,7 +40,16 @@ function Index() {
 
 const result = [
   {
-
+    "date": "2021/06/13",
+    "dirName": "2021/G3/hakodates",
+    "raceName": "函館スプリントS(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 220,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "5-1-4"
   }
 ]
 const wide_forecast_data = [
@@ -54,7 +63,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 4.11,
     "racePoint": 4.17,
-    "roubdTotalPoint": 5
+    "roubdTotalPoint": 5,
+    "oddsRank": 5,
+    "rank": 1
   },
   {
     "horseNumber": 1,
@@ -66,7 +77,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 4.35,
     "racePoint": 4.53,
-    "roubdTotalPoint": 4.99
+    "roubdTotalPoint": 4.99,
+    "oddsRank": 7,
+    "rank": 11
   },
   {
     "horseNumber": 5,
@@ -78,7 +91,9 @@ const wide_forecast_data = [
     "framePoint": 4,
     "timePoint": 4.77,
     "racePoint": 4.86,
-    "roubdTotalPoint": 4.78
+    "roubdTotalPoint": 4.78,
+    "oddsRank": 3,
+    "rank": 6
   },
   {
     "horseNumber": 7,
@@ -90,7 +105,9 @@ const wide_forecast_data = [
     "framePoint": 2.75,
     "timePoint": 5,
     "racePoint": 4.88,
-    "roubdTotalPoint": 4.65
+    "roubdTotalPoint": 4.65,
+    "oddsRank": 4,
+    "rank": 3
   },
   {
     "horseNumber": 8,
@@ -102,7 +119,9 @@ const wide_forecast_data = [
     "framePoint": 2.75,
     "timePoint": 4.43,
     "racePoint": 4.37,
-    "roubdTotalPoint": 4.31
+    "roubdTotalPoint": 4.31,
+    "oddsRank": 9,
+    "rank": 5
   },
   {
     "horseNumber": 2,
@@ -114,7 +133,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 4.14,
     "racePoint": 4.23,
-    "roubdTotalPoint": 4.24
+    "roubdTotalPoint": 4.24,
+    "oddsRank": 11,
+    "rank": 7
   },
   {
     "horseNumber": 13,
@@ -126,7 +147,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 3.84,
     "racePoint": 3.99,
-    "roubdTotalPoint": 4.14
+    "roubdTotalPoint": 4.14,
+    "oddsRank": 15,
+    "rank": 14
   },
   {
     "horseNumber": 16,
@@ -138,7 +161,9 @@ const wide_forecast_data = [
     "framePoint": 3.25,
     "timePoint": 4.66,
     "racePoint": 4.76,
-    "roubdTotalPoint": 4.08
+    "roubdTotalPoint": 4.08,
+    "oddsRank": 1,
+    "rank": 2
   },
   {
     "horseNumber": 15,
@@ -150,7 +175,9 @@ const wide_forecast_data = [
     "framePoint": 3.25,
     "timePoint": 4.01,
     "racePoint": 4.17,
-    "roubdTotalPoint": 4.06
+    "roubdTotalPoint": 4.06,
+    "oddsRank": 14,
+    "rank": 15
   },
   {
     "horseNumber": 6,
@@ -162,7 +189,9 @@ const wide_forecast_data = [
     "framePoint": 4,
     "timePoint": 3.25,
     "racePoint": 3.37,
-    "roubdTotalPoint": 3.91
+    "roubdTotalPoint": 3.91,
+    "oddsRank": 13,
+    "rank": 13
   },
   {
     "horseNumber": 11,
@@ -174,7 +203,9 @@ const wide_forecast_data = [
     "framePoint": 1.75,
     "timePoint": 4.6,
     "racePoint": 5,
-    "roubdTotalPoint": 3.86
+    "roubdTotalPoint": 3.86,
+    "oddsRank": 6,
+    "rank": 8
   },
   {
     "horseNumber": 10,
@@ -186,7 +217,9 @@ const wide_forecast_data = [
     "framePoint": 1,
     "timePoint": 4.51,
     "racePoint": 4.86,
-    "roubdTotalPoint": 3.8
+    "roubdTotalPoint": 3.8,
+    "oddsRank": 12,
+    "rank": 4
   },
   {
     "horseNumber": 3,
@@ -198,7 +231,9 @@ const wide_forecast_data = [
     "framePoint": 2.25,
     "timePoint": 3.36,
     "racePoint": 3.49,
-    "roubdTotalPoint": 3.46
+    "roubdTotalPoint": 3.46,
+    "oddsRank": 2,
+    "rank": 9
   },
   {
     "horseNumber": 9,
@@ -210,7 +245,9 @@ const wide_forecast_data = [
     "framePoint": 1,
     "timePoint": 4.54,
     "racePoint": 4.82,
-    "roubdTotalPoint": 3.38
+    "roubdTotalPoint": 3.38,
+    "oddsRank": 8,
+    "rank": 12
   },
   {
     "horseNumber": 12,
@@ -222,7 +259,9 @@ const wide_forecast_data = [
     "framePoint": 1.75,
     "timePoint": 4.32,
     "racePoint": 4.37,
-    "roubdTotalPoint": 2.63
+    "roubdTotalPoint": 2.63,
+    "oddsRank": 16,
+    "rank": 10
   },
   {
     "horseNumber": 4,
@@ -234,201 +273,235 @@ const wide_forecast_data = [
     "framePoint": 2.25,
     "timePoint": 0.95,
     "racePoint": 0.99,
-    "roubdTotalPoint": 2.47
+    "roubdTotalPoint": 2.47,
+    "oddsRank": 10,
+    "rank": 16
   }
 ]
 const top_forecast_data = [
   {
-    "horseNumber": 15,
-    "horseName": "アルピニズム",
-    "jockeyName": "団野",
-    "totalPoint": 7.5,
-    "horsePoint": 0.5,
-    "jockeyPoint": 5,
-    "framePoint": 1.2,
-    "timePoint": 4.01,
-    "racePoint": 4.17,
-    "roubdTotalPoint": 5
-  },
-  {
-    "horseNumber": 16,
-    "horseName": "カレンモエ",
-    "jockeyName": "鮫島駿",
-    "totalPoint": 6.53,
-    "horsePoint": 0.17,
-    "jockeyPoint": 4.54,
-    "framePoint": 1.2,
-    "timePoint": 4.66,
-    "racePoint": 4.76,
-    "roubdTotalPoint": 4.35
-  },
-  {
-    "horseNumber": 5,
-    "horseName": "ケープコッド",
-    "jockeyName": "吉田隼",
-    "totalPoint": 6.37,
-    "horsePoint": 0.38,
-    "jockeyPoint": 4.28,
-    "framePoint": 3.8,
-    "timePoint": 4.77,
-    "racePoint": 4.86,
-    "roubdTotalPoint": 4.25
-  },
-  {
     "horseNumber": 1,
     "horseName": "アスタールビー",
     "jockeyName": "池添",
-    "totalPoint": 6.32,
+    "totalPoint": 15.62,
     "horsePoint": 0.78,
     "jockeyPoint": 3.96,
     "framePoint": 5,
     "timePoint": 4.35,
     "racePoint": 4.53,
-    "roubdTotalPoint": 4.21
+    "roubdTotalPoint": 5,
+    "oddsRank": 7,
+    "rank": 11
   },
   {
-    "horseNumber": 3,
-    "horseName": "シゲルピンクルビー",
-    "jockeyName": "泉谷",
-    "totalPoint": 5.53,
-    "horsePoint": 5,
-    "jockeyPoint": 0.38,
-    "framePoint": 2.6,
-    "timePoint": 3.36,
-    "racePoint": 3.49,
-    "roubdTotalPoint": 3.69
-  },
-  {
-    "horseNumber": 9,
-    "horseName": "タイセイアベニール",
-    "jockeyName": "小崎",
-    "totalPoint": 5.21,
-    "horsePoint": 0.56,
-    "jockeyPoint": 3.32,
-    "framePoint": 1.2,
-    "timePoint": 4.54,
-    "racePoint": 4.82,
-    "roubdTotalPoint": 3.47
+    "horseNumber": 5,
+    "horseName": "ケープコッド",
+    "jockeyName": "吉田隼",
+    "totalPoint": 15.17,
+    "horsePoint": 0.38,
+    "jockeyPoint": 4.28,
+    "framePoint": 3.8,
+    "timePoint": 4.77,
+    "racePoint": 4.86,
+    "roubdTotalPoint": 4.86,
+    "oddsRank": 3,
+    "rank": 6
   },
   {
     "horseNumber": 14,
     "horseName": "ビアンフェ",
     "jockeyName": "藤岡佑",
-    "totalPoint": 5.2,
+    "totalPoint": 14.16,
     "horsePoint": 0.58,
     "jockeyPoint": 3.3,
     "framePoint": 5,
     "timePoint": 4.11,
     "racePoint": 4.17,
-    "roubdTotalPoint": 3.47
+    "roubdTotalPoint": 4.53,
+    "oddsRank": 5,
+    "rank": 1
   },
   {
-    "horseNumber": 8,
-    "horseName": "カツジ",
-    "jockeyName": "岩田康",
-    "totalPoint": 4.66,
-    "horsePoint": 0.63,
-    "jockeyPoint": 2.88,
-    "framePoint": 0,
-    "timePoint": 4.43,
-    "racePoint": 4.37,
-    "roubdTotalPoint": 3.11
-  },
-  {
-    "horseNumber": 11,
-    "horseName": "コントラチェック",
-    "jockeyName": "丸山",
-    "totalPoint": 4.64,
-    "horsePoint": 0.45,
-    "jockeyPoint": 2.99,
+    "horseNumber": 15,
+    "horseName": "アルピニズム",
+    "jockeyName": "団野",
+    "totalPoint": 13.34,
+    "horsePoint": 0.5,
+    "jockeyPoint": 5,
     "framePoint": 1.2,
-    "timePoint": 4.6,
-    "racePoint": 5,
-    "roubdTotalPoint": 3.09
+    "timePoint": 4.01,
+    "racePoint": 4.17,
+    "roubdTotalPoint": 4.27,
+    "oddsRank": 14,
+    "rank": 15
   },
   {
-    "horseNumber": 10,
-    "horseName": "ジョーアラビカ",
-    "jockeyName": "横山和",
-    "totalPoint": 4.51,
-    "horsePoint": 0.32,
-    "jockeyPoint": 2.99,
+    "horseNumber": 16,
+    "horseName": "カレンモエ",
+    "jockeyName": "鮫島駿",
+    "totalPoint": 13.12,
+    "horsePoint": 0.17,
+    "jockeyPoint": 4.54,
     "framePoint": 1.2,
-    "timePoint": 4.51,
-    "racePoint": 4.86,
-    "roubdTotalPoint": 3.01
-  },
-  {
-    "horseNumber": 12,
-    "horseName": "ロードアクア",
-    "jockeyName": "田中健",
-    "totalPoint": 3.87,
-    "horsePoint": 0.9,
-    "jockeyPoint": 2.12,
-    "framePoint": 1.2,
-    "timePoint": 4.32,
-    "racePoint": 4.37,
-    "roubdTotalPoint": 2.58
-  },
-  {
-    "horseNumber": 4,
-    "horseName": "ジャスティン",
-    "jockeyName": "坂井",
-    "totalPoint": 3.73,
-    "horsePoint": 0.1,
-    "jockeyPoint": 2.59,
-    "framePoint": 2.6,
-    "timePoint": 0.95,
-    "racePoint": 0.99,
-    "roubdTotalPoint": 2.49
-  },
-  {
-    "horseNumber": 6,
-    "horseName": "リンゴアメ",
-    "jockeyName": "秋山稔",
-    "totalPoint": 3.45,
-    "horsePoint": 0.45,
-    "jockeyPoint": 2.14,
-    "framePoint": 3.8,
-    "timePoint": 3.25,
-    "racePoint": 3.37,
-    "roubdTotalPoint": 2.3
+    "timePoint": 4.66,
+    "racePoint": 4.76,
+    "roubdTotalPoint": 4.2,
+    "oddsRank": 1,
+    "rank": 2
   },
   {
     "horseNumber": 2,
     "horseName": "マイネルアルケミー",
     "jockeyName": "黛",
-    "totalPoint": 3.28,
+    "totalPoint": 12.28,
     "horsePoint": 0.2,
     "jockeyPoint": 2.2,
     "framePoint": 5,
     "timePoint": 4.14,
     "racePoint": 4.23,
-    "roubdTotalPoint": 2.19
+    "roubdTotalPoint": 3.93,
+    "oddsRank": 11,
+    "rank": 7
   },
   {
-    "horseNumber": 7,
-    "horseName": "ミッキーブリランテ",
-    "jockeyName": "和田竜",
-    "totalPoint": 2.64,
-    "horsePoint": 0.72,
-    "jockeyPoint": 1.37,
-    "framePoint": 0,
-    "timePoint": 5,
-    "racePoint": 4.88,
-    "roubdTotalPoint": 1.76
+    "horseNumber": 9,
+    "horseName": "タイセイアベニール",
+    "jockeyName": "小崎",
+    "totalPoint": 11.73,
+    "horsePoint": 0.56,
+    "jockeyPoint": 3.32,
+    "framePoint": 1.2,
+    "timePoint": 4.54,
+    "racePoint": 4.82,
+    "roubdTotalPoint": 3.75,
+    "oddsRank": 8,
+    "rank": 12
+  },
+  {
+    "horseNumber": 3,
+    "horseName": "シゲルピンクルビー",
+    "jockeyName": "泉谷",
+    "totalPoint": 11.7,
+    "horsePoint": 5,
+    "jockeyPoint": 0.38,
+    "framePoint": 2.6,
+    "timePoint": 3.36,
+    "racePoint": 3.49,
+    "roubdTotalPoint": 3.75,
+    "oddsRank": 2,
+    "rank": 9
+  },
+  {
+    "horseNumber": 11,
+    "horseName": "コントラチェック",
+    "jockeyName": "丸山",
+    "totalPoint": 11.28,
+    "horsePoint": 0.45,
+    "jockeyPoint": 2.99,
+    "framePoint": 1.2,
+    "timePoint": 4.6,
+    "racePoint": 5,
+    "roubdTotalPoint": 3.61,
+    "oddsRank": 6,
+    "rank": 8
+  },
+  {
+    "horseNumber": 10,
+    "horseName": "ジョーアラビカ",
+    "jockeyName": "横山和",
+    "totalPoint": 11.02,
+    "horsePoint": 0.32,
+    "jockeyPoint": 2.99,
+    "framePoint": 1.2,
+    "timePoint": 4.51,
+    "racePoint": 4.86,
+    "roubdTotalPoint": 3.53,
+    "oddsRank": 12,
+    "rank": 4
+  },
+  {
+    "horseNumber": 6,
+    "horseName": "リンゴアメ",
+    "jockeyName": "秋山稔",
+    "totalPoint": 10.43,
+    "horsePoint": 0.45,
+    "jockeyPoint": 2.14,
+    "framePoint": 3.8,
+    "timePoint": 3.25,
+    "racePoint": 3.37,
+    "roubdTotalPoint": 3.34,
+    "oddsRank": 13,
+    "rank": 13
   },
   {
     "horseNumber": 13,
     "horseName": "センショウユウト",
     "jockeyName": "中井",
-    "totalPoint": 1.61,
+    "totalPoint": 10.28,
     "horsePoint": 0.42,
     "jockeyPoint": 0.85,
     "framePoint": 5,
     "timePoint": 3.84,
     "racePoint": 3.99,
-    "roubdTotalPoint": 1.07
+    "roubdTotalPoint": 3.29,
+    "oddsRank": 15,
+    "rank": 14
+  },
+  {
+    "horseNumber": 12,
+    "horseName": "ロードアクア",
+    "jockeyName": "田中健",
+    "totalPoint": 10.03,
+    "horsePoint": 0.9,
+    "jockeyPoint": 2.12,
+    "framePoint": 1.2,
+    "timePoint": 4.32,
+    "racePoint": 4.37,
+    "roubdTotalPoint": 3.21,
+    "oddsRank": 16,
+    "rank": 10
+  },
+  {
+    "horseNumber": 8,
+    "horseName": "カツジ",
+    "jockeyName": "岩田康",
+    "totalPoint": 9.95,
+    "horsePoint": 0.63,
+    "jockeyPoint": 2.88,
+    "framePoint": 0,
+    "timePoint": 4.43,
+    "racePoint": 4.37,
+    "roubdTotalPoint": 3.19,
+    "oddsRank": 9,
+    "rank": 5
+  },
+  {
+    "horseNumber": 7,
+    "horseName": "ミッキーブリランテ",
+    "jockeyName": "和田竜",
+    "totalPoint": 8.59,
+    "horsePoint": 0.72,
+    "jockeyPoint": 1.37,
+    "framePoint": 0,
+    "timePoint": 5,
+    "racePoint": 4.88,
+    "roubdTotalPoint": 2.75,
+    "oddsRank": 4,
+    "rank": 3
+  },
+  {
+    "horseNumber": 4,
+    "horseName": "ジャスティン",
+    "jockeyName": "坂井",
+    "totalPoint": 6.96,
+    "horsePoint": 0.1,
+    "jockeyPoint": 2.59,
+    "framePoint": 2.6,
+    "timePoint": 0.95,
+    "racePoint": 0.99,
+    "roubdTotalPoint": 2.23,
+    "oddsRank": 10,
+    "rank": 16
   }
 ]
 

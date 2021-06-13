@@ -126,25 +126,25 @@ const result = [
     "date": "2021/06/13",
     "dirName": "2021/G3/epsom",
     "raceName": "エプソムC(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": 5600,
+    "wide5box": 3630,
+    "3huku5box": 12090,
+    "1-2-3oddsRank": "3-6-2"
   },
   {
     "date": "2021/06/13",
     "dirName": "2021/G3/hakodates",
     "raceName": "函館スプリントS(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 220,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "5-1-4"
   }
 ].reverse()
 

@@ -49,7 +49,7 @@ const displayString = (str:any) => {
   if (str == null) {
     return <Td>{"-"}</Td>
   } else {
-    return <Td isNumeric>{str}</Td>
+    return displayRank(str)
   }
 }
 
@@ -67,5 +67,19 @@ const displayTotal = (point: number, index:number,type: string) => {
       return <Td bg="green.50">{point}</Td>
     }
   }
-  
+}
+
+function displayRank(rank: number) {
+  switch (rank) {
+    case 1:
+      return <Td bg="yellow.100">{rank}</Td>;
+    case 2:
+      return <Td bg="blue.100">{rank}</Td>;
+    case 3:
+      return <Td bg="orange.100">{rank}</Td>;
+    case 99:
+      return <Td>{"-"}</Td>;
+    default:
+      return <Td>{rank}</Td>;
+  }
 }
