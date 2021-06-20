@@ -39,18 +39,6 @@ function Index() {
 
 const result = [
   {
-    "date": "2021/06/13",
-    "dirName": "2021/G3/hakodates",
-    "raceName": "函館スプリントS(G3)",
-    "tan": -1000,
-    "tan2": -1000,
-    "huku": -1000,
-    "wide3box": -1000,
-    "wide5box": 220,
-    "3huku5box": -1000,
-    "1-2-3oddsRank": "5-1-4"
-  },
-  {
     "date": "2021/05/16",
     "dirName": "2021/G1/victoria",
     "raceName": "ヴィクトリアマイル(G1)",
@@ -162,25 +150,25 @@ const result = [
     "date": "2021/06/19",
     "dirName": "2021/G3/mermaid",
     "raceName": "マーメイドS(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "10-5-6"
   },
   {
     "date": "2021/06/19",
     "dirName": "2021/G3/unicorn",
     "raceName": "ユニコーンS(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "7-14-3"
   }
 ].reverse()
 
