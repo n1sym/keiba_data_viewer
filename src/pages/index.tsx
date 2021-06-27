@@ -37,7 +37,7 @@ function Index() {
   );
 }
 
-const result = [
+const result =[
   {
     "date": "2021/05/16",
     "dirName": "2021/G1/victoria",
@@ -169,6 +169,18 @@ const result = [
     "wide5box": -1000,
     "3huku5box": -1000,
     "1-2-3oddsRank": "7-14-3"
+  },
+  {
+    "date": "2021/06/27",
+    "dirName": "2021/G1/takara",
+    "raceName": "宝塚記念(G1)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 

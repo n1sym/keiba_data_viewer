@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HStack, Heading } from "@chakra-ui/react";
+import { HStack, Heading, Box } from "@chakra-ui/react";
 
 type typeLayout = {
   children: React.ReactNode;
@@ -9,6 +9,7 @@ type typeLayout = {
 export default function Layout({ children }: typeLayout) {
   return (
     <div>
+      <Box mb={12}>
       <HStack px={4} py={4} >
         <Heading size="md">
           <Link href="/">
@@ -20,6 +21,7 @@ export default function Layout({ children }: typeLayout) {
       
 
       <main>{children}</main>
+      </Box>
     </div>
   );
 }
