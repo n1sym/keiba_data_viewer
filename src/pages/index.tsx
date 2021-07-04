@@ -186,25 +186,25 @@ const result =[
     "date": "2021/07/04",
     "dirName": "2021/G3/cbc",
     "raceName": "CBC賞(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 70,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "8-2-6"
   },
   {
     "date": "2021/07/04",
     "dirName": "2021/G3/radio",
     "raceName": "ラジオNIKKEI賞(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": 2900,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "4-11-7"
   }
 ].reverse()
 
