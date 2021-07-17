@@ -7,8 +7,8 @@ import {ForecastResultTable} from "../../../../components/ForecastResultTable"
 import Link from "next/link";
 import Head from "next/head";
 
-const title = "第55回 七夕賞(G3)"
-const result_url = ""
+const title = "第57回 七夕賞(G3)"
+const result_url = "https://race.netkeiba.com/race/result.html?race_id=202103010411&rf=race_list"
 
 function Index() {
   return (
@@ -40,7 +40,16 @@ function Index() {
 
 const result = [
   {
-
+    "date": "2021/07/11",
+    "dirName": "2021/G3/tanabata",
+    "raceName": "七夕賞(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "2-7-9"
   }
 ]
 const wide_forecast_data = [
