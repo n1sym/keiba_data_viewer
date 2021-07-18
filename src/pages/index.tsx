@@ -244,27 +244,27 @@ const result =[
   },
   {
     "date": "2021/07/18",
-    "dirName": "2021/G3/toyota",
-    "raceName": "トヨタ賞中京記念(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "dirName": "2021/G3/hakodate",
+    "raceName": "函館記念(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 690,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "2-14-12"
   },
   {
     "date": "2021/07/18",
-    "dirName": "2021/G3/hakodate",
-    "raceName": "函館記念(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "dirName": "2021/G3/toyota",
+    "raceName": "トヨタ賞中京記念(G3)",
+    "tan": 3400,
+    "tan2": 1200,
+    "huku": 900,
+    "wide3box": 881,
+    "wide5box": 1780,
+    "3huku5box": 4020,
+    "1-2-3oddsRank": "1-6-5"
   }
 ].reverse()
 
