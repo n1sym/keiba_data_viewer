@@ -13,7 +13,7 @@ export default function Layout({ children }: typeLayout) {
       <HStack px={4} py={4} >
         <Heading size="md">
           <Link href="/">
-            <a> Minerva v1.2.1</a>
+            <a> Minerva v1.3.0</a>
           </Link>
         </Heading>
       </HStack>
