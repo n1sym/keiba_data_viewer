@@ -11,6 +11,7 @@ function Index() {
   return (
     <Layout>
       <Head>
+      <title>{"競馬予想AI Minerva"}</title>
         <meta
           property="og:image"
           content={`https://firebasestorage.googleapis.com/v0/b/hukurouo.appspot.com/o/image%2Fwh.png?alt=media&token=5adfeea7-d45b-463e-b2f4-edceae1ab06e`}
@@ -19,10 +20,16 @@ function Index() {
         <meta name="twitter:card" content="summary" />
       </Head>
       <Stack p={4}>
+        <HStack>
+          <Text pt={4}>
+            自作の競馬予想AI
+          </Text>
+          <a href="https://github.com/hukurouo/Minerva" target="_blank" rel="noopener noreferrer"><Text color="teal.500" fontWeight="semibold" pt={4}>Minerva</Text></a>
+          <Text pt={4}>
+            の公開予想置き場
+          </Text>
+        </HStack>
         
-        <Text pt={4}>
-        <a href="https://github.com/hukurouo/Minerva" target="_blank" rel="noopener noreferrer">Minerva</a>に算出させた、競馬予想置き場　
-        </Text>
         <HStack>
         <Text pt={4}>
           つくった人：
@@ -30,7 +37,7 @@ function Index() {
           <Link href="https://twitter.com/hukurouo_code" >
           <a target="_blank" rel="noopener noreferrer"><Text color="teal.500" pt={4}> @hukurouo_code</Text></a>
           </Link>
-          </HStack>
+        </HStack>
       <IndexTable result={result}></IndexTable>
     </Stack>
     </Layout>
