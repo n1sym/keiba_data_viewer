@@ -272,6 +272,18 @@ const result =[
     "wide5box": 1780,
     "3huku5box": 4020,
     "1-2-3oddsRank": "1-6-5"
+  },
+  {
+    "date": "2021/07/25",
+    "dirName": "2021/G3/isd",
+    "raceName": "アイビスサマーD(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
