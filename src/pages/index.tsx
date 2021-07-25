@@ -277,13 +277,13 @@ const result =[
     "date": "2021/07/25",
     "dirName": "2021/G3/isd",
     "raceName": "アイビスサマーD(G3)",
-    "tan": "",
-    "tan2": "",
-    "huku": "",
-    "wide3box": "",
-    "wide5box": "",
-    "3huku5box": "",
-    "1-2-3oddsRank": ""
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -510,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "1-2-14"
   }
 ].reverse()
 
