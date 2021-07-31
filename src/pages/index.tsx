@@ -284,6 +284,18 @@ const result =[
     "wide5box": -510,
     "3huku5box": -1000,
     "1-2-3oddsRank": "1-2-14"
+  },
+  {
+    "date": "2021/08/01",
+    "dirName": "2021/G3/queen",
+    "raceName": "クイーンS(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
