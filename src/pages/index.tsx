@@ -296,6 +296,30 @@ const result =[
     "wide5box": -670,
     "3huku5box": -1000,
     "1-2-3oddsRank": "3-1-8"
+  },
+  {
+    "date": "2021/08/08",
+    "dirName": "2021/G3/leopard",
+    "raceName": "レパードS(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
+  },
+  {
+    "date": "2021/08/08",
+    "dirName": "2021/G3/elm",
+    "raceName": "エルムS(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
