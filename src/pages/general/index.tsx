@@ -46,22 +46,20 @@ function Index() {
 
 const result =[
   {
-    "date": "2021/07/25",
-    "dirName": "2021/20210725",
-    "venue": "函館8日目-新潟2日目",
-    "total": -420,
-    "count": 24,
-    "hit": "25.0%",
-    "rec": "82.5%"
+    "date": "2021/08/07",
+    "dirName": "2021/20210807",
+    "venue": "新潟5日目-函館11日目",
+    "total": -1240,
+    "count": 21,
+    "hit_count": 3
   },
   {
-    "date": "2021/07/25",
-    "dirName": "2021/20210725",
-    "venue": "函館8日目-新潟2日目",
-    "total": 0,
-    "count": 0,
-    "hit": "25.0%",
-    "rec": "82.5%"
+    "date": "2021/08/08",
+    "dirName": "2021/20210808",
+    "venue": "新潟6日目-函館12日目",
+    "total": 600,
+    "count": 19,
+    "hit_count": 4
   }
 ].reverse()
 

@@ -11,13 +11,15 @@ export const GeneralTable = (props: { result: any[] }) => (
   <Box overflowX={{base:"auto", sm:"auto", md: "auto"}} w={320} py={6} px={2}>
     {totalNum(props.result)}
   </Box>
-  <Box overflowX={{base:"auto", sm:"auto", md: "auto"}} pb={12} maxW={600}>
+  <Box overflowX={{base:"auto", sm:"auto", md: "auto"}} pb={12} maxW={1200}>
   <Table size="sm" mt={2}>
     <Thead>
       <Tr>
         <Th>開催日</Th>
         <Th>開催レース</Th>
         <Th>収支</Th>
+        <Th>購入レース数</Th>
+        <Th>的中数</Th>
         <Th>的中率</Th>
         <Th>回収率</Th>
       </Tr>
@@ -37,10 +39,11 @@ const totalNum = (result: any) => {
   const totalTan = result.map((item: any)=>{if (item.total != "-"){return Number(item.total)}}).reduce((prev: number, current:number)=>{return prev+current;})
   const recTan = Math.round(((count + totalTan) / count)*10000)/100
   const recTanStr = String(recTan) + "%"
-  const totalTanPrevArray = result.map((item: any)=>{if (item.total != "-"){return Number(item.total)}})
+  const totalTanPrevArray = result.map((item: any)=>{if (item.total != "-"){return Number(item.total)}}).reverse()
   totalTanPrevArray.pop()
   const totalTanPrev = totalTanPrevArray.reduce((prev: number, current:number)=>{return prev+current;})
-  const recTanPrev = Math.round(((count + totalTanPrev) / count)*10000)/100
+  const countPrev = (count/100 - Number(result[0].count))*100
+  const recTanPrev = Math.round(((countPrev + totalTanPrev) / countPrev)*10000)/100
   const recTanPrevStr = String(recTan - recTanPrev) + "%"
 
   return (
@@ -50,8 +53,8 @@ const totalNum = (result: any) => {
         <StatLabel>Total</StatLabel>
         <StatNumber>{totalTan}</StatNumber>
         <StatHelpText>
-        <StatArrow type={statArrow(totalTan - totalTanPrev)} />
-          {totalTan - totalTanPrev}
+        <StatArrow type={statArrow(result[0].total)} />
+          {result[0].total}
         </StatHelpText>
       </Stat>
     
@@ -80,10 +83,12 @@ const displayThColor = (index: number, item: any) => {
   return (
     <Tr key={index}>
       <Td minW={24}>{item.date}</Td>
-      <Td minW={40}><Link href={"results/" + item.dirName}><a><Text color="blue.500">{item.venue}</Text></a></Link></Td>
+      <Td minW={40}><Link href={"general/" + item.dirName}><a><Text color="blue.500">{item.venue}</Text></a></Link></Td>
       <Td minW={24}>{colorNum(item.total)}</Td>
-      <Td minW={24}>{item.hit}</Td>
-      <Td minW={24}>{item.rec}</Td>
+      <Td minW={24}>{item.count}</Td>
+      <Td minW={24}>{item.hit_count}</Td>
+      <Td minW={24}>{evalHitRate(item.count, item.hit_count)}</Td>
+      <Td minW={24}>{evalRecRate(item.count, item.total)}</Td>
     </Tr>
   );
 };
@@ -101,4 +106,13 @@ const colorNum = (num: any) => {
   } else {
     return <Text> {num} </Text>
   }
+}
+
+const evalHitRate = (count: number, hitCount: number) => {
+  return String(Math.round(hitCount / count*1000)/10) + "%"
+}
+
+const evalRecRate = (count: number, total: number) => {
+  const recRate = Math.round(((count*100 + total) / count*100)*1)/100
+  return String(recRate) + "%"
 }

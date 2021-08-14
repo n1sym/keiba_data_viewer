@@ -301,6 +301,30 @@ const result =[
     "date": "2021/08/08",
     "dirName": "2021/G3/leopard",
     "raceName": "レパードS(G3)",
+    "tan": -1000,
+    "tan2": 400,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "1-10-6"
+  },
+  {
+    "date": "2021/08/08",
+    "dirName": "2021/G3/elm",
+    "raceName": "エルムS(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "4-7-11"
+  },
+  {
+    "date": "2021/08/15",
+    "dirName": "2021/G3/sekiya",
+    "raceName": "関屋記念(G3)",
     "tan": "",
     "tan2": "",
     "huku": "",
@@ -310,9 +334,9 @@ const result =[
     "1-2-3oddsRank": ""
   },
   {
-    "date": "2021/08/08",
-    "dirName": "2021/G3/elm",
-    "raceName": "エルムS(G3)",
+    "date": "2021/08/15",
+    "dirName": "2021/G3/ogura",
+    "raceName": "小倉記念(G3)",
     "tan": "",
     "tan2": "",
     "huku": "",
