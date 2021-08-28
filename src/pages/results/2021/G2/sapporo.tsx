@@ -40,7 +40,16 @@ function Index() {
 
 const result = [
   {
-
+    "date": "2021/08/22",
+    "dirName": "2021/G2/sapporo",
+    "raceName": "札幌記念(G2)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": 100,
+    "wide3box": -1000,
+    "wide5box": -750,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "2-1-8"
   }
 ]
 const wide_forecast_data = [
@@ -212,7 +221,9 @@ const top_forecast_data = [
     "framePoint": 1.3,
     "timePoint": 1,
     "racePoint": 1.53,
-    "roubdTotalPoint": 5
+    "roubdTotalPoint": 5,
+    "oddsRank": 1,
+    "rank": 2
   },
   {
     "horseNumber": 12,
@@ -224,7 +235,9 @@ const top_forecast_data = [
     "framePoint": 1.3,
     "timePoint": 1.93,
     "racePoint": 0.85,
-    "roubdTotalPoint": 2.96
+    "roubdTotalPoint": 2.96,
+    "oddsRank": 3,
+    "rank": 5
   },
   {
     "horseNumber": 10,
@@ -236,7 +249,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 4.04,
     "racePoint": 4.54,
-    "roubdTotalPoint": 2.73
+    "roubdTotalPoint": 2.73,
+    "oddsRank": 10,
+    "rank": 8
   },
   {
     "horseNumber": 1,
@@ -248,7 +263,9 @@ const top_forecast_data = [
     "framePoint": 5,
     "timePoint": 4.94,
     "racePoint": 4.97,
-    "roubdTotalPoint": 2.16
+    "roubdTotalPoint": 2.16,
+    "oddsRank": 6,
+    "rank": "中止"
   },
   {
     "horseNumber": 2,
@@ -260,7 +277,9 @@ const top_forecast_data = [
     "framePoint": 1.3,
     "timePoint": 4.32,
     "racePoint": 4.27,
-    "roubdTotalPoint": 2.04
+    "roubdTotalPoint": 2.04,
+    "oddsRank": 4,
+    "rank": 11
   },
   {
     "horseNumber": 13,
@@ -272,7 +291,9 @@ const top_forecast_data = [
     "framePoint": 1.3,
     "timePoint": 4.32,
     "racePoint": 4.18,
-    "roubdTotalPoint": 1.85
+    "roubdTotalPoint": 1.85,
+    "oddsRank": 2,
+    "rank": 1
   },
   {
     "horseNumber": 8,
@@ -284,7 +305,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 4.92,
     "racePoint": 5,
-    "roubdTotalPoint": 1.7
+    "roubdTotalPoint": 1.7,
+    "oddsRank": 9,
+    "rank": 6
   },
   {
     "horseNumber": 7,
@@ -296,7 +319,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 4.4,
     "racePoint": 4.29,
-    "roubdTotalPoint": 1.44
+    "roubdTotalPoint": 1.44,
+    "oddsRank": 8,
+    "rank": 3
   },
   {
     "horseNumber": 6,
@@ -308,7 +333,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 5,
     "racePoint": 4.88,
-    "roubdTotalPoint": 0.97
+    "roubdTotalPoint": 0.97,
+    "oddsRank": 13,
+    "rank": "中止"
   },
   {
     "horseNumber": 11,
@@ -320,7 +347,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 3.73,
     "racePoint": 3.72,
-    "roubdTotalPoint": 0.82
+    "roubdTotalPoint": 0.82,
+    "oddsRank": 5,
+    "rank": 9
   },
   {
     "horseNumber": 5,
@@ -332,7 +361,9 @@ const top_forecast_data = [
     "framePoint": 1.3,
     "timePoint": 4.94,
     "racePoint": 4.8,
-    "roubdTotalPoint": 0.59
+    "roubdTotalPoint": 0.59,
+    "oddsRank": 7,
+    "rank": 10
   },
   {
     "horseNumber": 9,
@@ -344,7 +375,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 3.96,
     "racePoint": 4.85,
-    "roubdTotalPoint": 0.39
+    "roubdTotalPoint": 0.39,
+    "oddsRank": 12,
+    "rank": 7
   },
   {
     "horseNumber": 3,
@@ -356,7 +389,9 @@ const top_forecast_data = [
     "framePoint": 2.41,
     "timePoint": 4.36,
     "racePoint": 4.22,
-    "roubdTotalPoint": 0.34
+    "roubdTotalPoint": 0.34,
+    "oddsRank": 11,
+    "rank": 4
   }
 ]
 

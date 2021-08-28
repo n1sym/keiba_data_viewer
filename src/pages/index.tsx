@@ -349,6 +349,30 @@ const result =[
     "date": "2021/08/22",
     "dirName": "2021/G2/sapporo",
     "raceName": "札幌記念(G2)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": 100,
+    "wide3box": -1000,
+    "wide5box": -750,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "2-1-8"
+  },
+  {
+    "date": "2021/08/22",
+    "dirName": "2021/G3/kitakyu",
+    "raceName": "TV西日本北九州記念(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 200,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "5-4-2"
+  },
+  {
+    "date": "2021/08/29",
+    "dirName": "2021/G3/niigata2",
+    "raceName": "新潟2歳S(G3)",
     "tan": "",
     "tan2": "",
     "huku": "",
@@ -358,9 +382,9 @@ const result =[
     "1-2-3oddsRank": ""
   },
   {
-    "date": "2021/08/22",
-    "dirName": "2021/G3/kitakyu",
-    "raceName": "TV西日本北九州記念(G3)",
+    "date": "2021/08/29",
+    "dirName": "2021/G3/keene",
+    "raceName": "キーンランドC(G3)",
     "tan": "",
     "tan2": "",
     "huku": "",

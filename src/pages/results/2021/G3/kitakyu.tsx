@@ -9,7 +9,7 @@ import Head from "next/head";
 import {RaceForecastTableG3tan} from "../../../../components/RaceForecastTableG3tan"
 
 const title = "第56回 北九州記念(G3)"
-const result_url = "https://race.netkeiba.com/race/result.html?race_id=202110040411"
+const result_url = "https://race.netkeiba.com/race/result.html?race_id=202110040411&rf=race_list"
 
 function Index() {
   return (
@@ -41,7 +41,16 @@ function Index() {
 
 const result = [
   {
-
+    "date": "2021/08/22",
+    "dirName": "2021/G3/kitakyu",
+    "raceName": "TV西日本北九州記念(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": 200,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "5-4-2"
   }
 ]
 const wide_forecast_data = [
@@ -55,7 +64,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 5,
     "racePoint": 5,
-    "roubdTotalPoint": 5
+    "roubdTotalPoint": 5,
+    "oddsRank": 1,
+    "rank": 7
   },
   {
     "horseNumber": 11,
@@ -67,7 +78,9 @@ const wide_forecast_data = [
     "framePoint": 4.21,
     "timePoint": 3.84,
     "racePoint": 3.78,
-    "roubdTotalPoint": 4.67
+    "roubdTotalPoint": 4.67,
+    "oddsRank": 3,
+    "rank": 14
   },
   {
     "horseNumber": 12,
@@ -79,7 +92,9 @@ const wide_forecast_data = [
     "framePoint": 4.21,
     "timePoint": 3.45,
     "racePoint": 3.3,
-    "roubdTotalPoint": 4.27
+    "roubdTotalPoint": 4.27,
+    "oddsRank": 2,
+    "rank": 3
   },
   {
     "horseNumber": 17,
@@ -91,7 +106,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 3.43,
     "racePoint": 2.87,
-    "roubdTotalPoint": 3.98
+    "roubdTotalPoint": 3.98,
+    "oddsRank": 5,
+    "rank": 1
   },
   {
     "horseNumber": 16,
@@ -103,7 +120,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 3.3,
     "racePoint": 2.73,
-    "roubdTotalPoint": 3.89
+    "roubdTotalPoint": 3.89,
+    "oddsRank": 11,
+    "rank": 8
   },
   {
     "horseNumber": 9,
@@ -115,7 +134,9 @@ const wide_forecast_data = [
     "framePoint": 3.16,
     "timePoint": 2.77,
     "racePoint": 2.13,
-    "roubdTotalPoint": 3.84
+    "roubdTotalPoint": 3.84,
+    "oddsRank": 6,
+    "rank": 4
   },
   {
     "horseNumber": 18,
@@ -127,7 +148,9 @@ const wide_forecast_data = [
     "framePoint": 5,
     "timePoint": 3.58,
     "racePoint": 3.21,
-    "roubdTotalPoint": 3.8
+    "roubdTotalPoint": 3.8,
+    "oddsRank": 7,
+    "rank": 10
   },
   {
     "horseNumber": 14,
@@ -139,7 +162,9 @@ const wide_forecast_data = [
     "framePoint": 2.37,
     "timePoint": 3.3,
     "racePoint": 1.53,
-    "roubdTotalPoint": 3.67
+    "roubdTotalPoint": 3.67,
+    "oddsRank": 9,
+    "rank": 5
   },
   {
     "horseNumber": 6,
@@ -151,7 +176,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 3.28,
     "racePoint": 2.53,
-    "roubdTotalPoint": 3.55
+    "roubdTotalPoint": 3.55,
+    "oddsRank": 4,
+    "rank": 2
   },
   {
     "horseNumber": 3,
@@ -163,7 +190,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 3.8,
     "racePoint": 2.98,
-    "roubdTotalPoint": 3.46
+    "roubdTotalPoint": 3.46,
+    "oddsRank": 17,
+    "rank": 15
   },
   {
     "horseNumber": 10,
@@ -175,7 +204,9 @@ const wide_forecast_data = [
     "framePoint": 3.16,
     "timePoint": 3.5,
     "racePoint": 2.76,
-    "roubdTotalPoint": 3.38
+    "roubdTotalPoint": 3.38,
+    "oddsRank": 14,
+    "rank": 13
   },
   {
     "horseNumber": 15,
@@ -187,7 +218,9 @@ const wide_forecast_data = [
     "framePoint": 2.37,
     "timePoint": 3.61,
     "racePoint": 3.24,
-    "roubdTotalPoint": 3.25
+    "roubdTotalPoint": 3.25,
+    "oddsRank": 13,
+    "rank": 16
   },
   {
     "horseNumber": 5,
@@ -199,7 +232,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 1.07,
     "racePoint": 3.15,
-    "roubdTotalPoint": 3.11
+    "roubdTotalPoint": 3.11,
+    "oddsRank": 18,
+    "rank": 18
   },
   {
     "horseNumber": 8,
@@ -211,7 +246,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 3.48,
     "racePoint": 2.98,
-    "roubdTotalPoint": 2.99
+    "roubdTotalPoint": 2.99,
+    "oddsRank": 16,
+    "rank": 11
   },
   {
     "horseNumber": 1,
@@ -223,7 +260,9 @@ const wide_forecast_data = [
     "framePoint": 0.53,
     "timePoint": 4.57,
     "racePoint": 4.74,
-    "roubdTotalPoint": 2.85
+    "roubdTotalPoint": 2.85,
+    "oddsRank": 12,
+    "rank": 6
   },
   {
     "horseNumber": 4,
@@ -235,7 +274,9 @@ const wide_forecast_data = [
     "framePoint": 3.68,
     "timePoint": 1.48,
     "racePoint": 3.35,
-    "roubdTotalPoint": 2.69
+    "roubdTotalPoint": 2.69,
+    "oddsRank": 10,
+    "rank": 12
   },
   {
     "horseNumber": 2,
@@ -247,7 +288,9 @@ const wide_forecast_data = [
     "framePoint": 0.53,
     "timePoint": 3.63,
     "racePoint": 3.64,
-    "roubdTotalPoint": 2.61
+    "roubdTotalPoint": 2.61,
+    "oddsRank": 8,
+    "rank": 9
   },
   {
     "horseNumber": 13,
@@ -259,7 +302,9 @@ const wide_forecast_data = [
     "framePoint": 2.37,
     "timePoint": 2.62,
     "racePoint": 1.42,
-    "roubdTotalPoint": 1.99
+    "roubdTotalPoint": 1.99,
+    "oddsRank": 15,
+    "rank": 17
   }
 ]
 const top_forecast_data = [
@@ -273,7 +318,9 @@ const top_forecast_data = [
     "oikiriPoint": 4,
     "stablePoint": 4,
     "timePoint": 25,
-    "roubdTotalPoint": 5
+    "roubdTotalPoint": 5,
+    "oddsRank": 1,
+    "rank": 7
   },
   {
     "horseNumber": 2,
@@ -285,7 +332,9 @@ const top_forecast_data = [
     "oikiriPoint": 4,
     "stablePoint": 2,
     "timePoint": 25,
-    "roubdTotalPoint": 3.53
+    "roubdTotalPoint": 3.53,
+    "oddsRank": 8,
+    "rank": 9
   },
   {
     "horseNumber": 6,
@@ -297,7 +346,9 @@ const top_forecast_data = [
     "oikiriPoint": 4,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 2.39
+    "roubdTotalPoint": 2.39,
+    "oddsRank": 4,
+    "rank": 2
   },
   {
     "horseNumber": 14,
@@ -309,7 +360,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 2.35
+    "roubdTotalPoint": 2.35,
+    "oddsRank": 9,
+    "rank": 5
   },
   {
     "horseNumber": 9,
@@ -321,7 +374,9 @@ const top_forecast_data = [
     "oikiriPoint": 4,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 2.15
+    "roubdTotalPoint": 2.15,
+    "oddsRank": 6,
+    "rank": 4
   },
   {
     "horseNumber": 11,
@@ -333,7 +388,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 6.5,
-    "roubdTotalPoint": 2.03
+    "roubdTotalPoint": 2.03,
+    "oddsRank": 3,
+    "rank": 14
   },
   {
     "horseNumber": 12,
@@ -345,7 +402,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 4,
     "timePoint": 3.5,
-    "roubdTotalPoint": 1.84
+    "roubdTotalPoint": 1.84,
+    "oddsRank": 2,
+    "rank": 3
   },
   {
     "horseNumber": 10,
@@ -357,7 +416,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 7.5,
-    "roubdTotalPoint": 1.69
+    "roubdTotalPoint": 1.69,
+    "oddsRank": 14,
+    "rank": 13
   },
   {
     "horseNumber": 17,
@@ -369,7 +430,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 7.5,
-    "roubdTotalPoint": 1.65
+    "roubdTotalPoint": 1.65,
+    "oddsRank": 5,
+    "rank": 1
   },
   {
     "horseNumber": 18,
@@ -381,7 +444,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 7.5,
-    "roubdTotalPoint": 1.54
+    "roubdTotalPoint": 1.54,
+    "oddsRank": 7,
+    "rank": 10
   },
   {
     "horseNumber": 13,
@@ -393,7 +458,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 1.39
+    "roubdTotalPoint": 1.39,
+    "oddsRank": 15,
+    "rank": 17
   },
   {
     "horseNumber": 16,
@@ -405,7 +472,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 1.36
+    "roubdTotalPoint": 1.36,
+    "oddsRank": 11,
+    "rank": 8
   },
   {
     "horseNumber": 3,
@@ -417,7 +486,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 0,
     "timePoint": 3.5,
-    "roubdTotalPoint": 1.3
+    "roubdTotalPoint": 1.3,
+    "oddsRank": 17,
+    "rank": 15
   },
   {
     "horseNumber": 8,
@@ -429,7 +500,9 @@ const top_forecast_data = [
     "oikiriPoint": 0,
     "stablePoint": 2,
     "timePoint": 7.5,
-    "roubdTotalPoint": 1.15
+    "roubdTotalPoint": 1.15,
+    "oddsRank": 16,
+    "rank": 11
   },
   {
     "horseNumber": 1,
@@ -441,7 +514,9 @@ const top_forecast_data = [
     "oikiriPoint": 2,
     "stablePoint": 2,
     "timePoint": 0,
-    "roubdTotalPoint": 1.09
+    "roubdTotalPoint": 1.09,
+    "oddsRank": 12,
+    "rank": 6
   },
   {
     "horseNumber": 15,
@@ -453,7 +528,9 @@ const top_forecast_data = [
     "oikiriPoint": 0,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 1.07
+    "roubdTotalPoint": 1.07,
+    "oddsRank": 13,
+    "rank": 16
   },
   {
     "horseNumber": 4,
@@ -465,7 +542,9 @@ const top_forecast_data = [
     "oikiriPoint": 0,
     "stablePoint": 2,
     "timePoint": 3.5,
-    "roubdTotalPoint": 0.85
+    "roubdTotalPoint": 0.85,
+    "oddsRank": 10,
+    "rank": 12
   },
   {
     "horseNumber": 5,
@@ -477,7 +556,9 @@ const top_forecast_data = [
     "oikiriPoint": 0,
     "stablePoint": 2,
     "timePoint": 0,
-    "roubdTotalPoint": 0.73
+    "roubdTotalPoint": 0.73,
+    "oddsRank": 18,
+    "rank": 18
   }
 ]
 
