@@ -428,6 +428,18 @@ const result =[
     "wide5box": -340,
     "3huku5box": -1000,
     "1-2-3oddsRank": "4-3-8"
+  },
+  {
+    "date": "2021/09/12",
+    "dirName": "2021/G3/keisei",
+    "raceName": "京成杯オータムH(G3)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
   }
 ].reverse()
 
