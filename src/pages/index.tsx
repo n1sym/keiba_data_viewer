@@ -433,6 +433,18 @@ const result =[
     "date": "2021/09/12",
     "dirName": "2021/G3/keisei",
     "raceName": "京成杯オータムH(G3)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": 500,
+    "wide3box": 1541,
+    "wide5box": -230,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "7-12-1"
+  },
+  {
+    "date": "2021/09/18",
+    "dirName": "2021/G2/rose",
+    "raceName": "関西TVローズS(G2)",
     "tan": "",
     "tan2": "",
     "huku": "",
