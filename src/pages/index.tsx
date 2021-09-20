@@ -442,9 +442,21 @@ const result =[
     "1-2-3oddsRank": "7-12-1"
   },
   {
-    "date": "2021/09/18",
+    "date": "2021/09/19",
     "dirName": "2021/G2/rose",
     "raceName": "関西TVローズS(G2)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": 600,
+    "wide3box": -1000,
+    "wide5box": -570,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "4-12-1"
+  },
+  {
+    "date": "2021/09/20",
+    "dirName": "2021/G2/sento",
+    "raceName": "朝日セントライト記念(G2)",
     "tan": "",
     "tan2": "",
     "huku": "",
