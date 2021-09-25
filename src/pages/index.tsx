@@ -46,6 +46,18 @@ function Index() {
 
 const result =[
   {
+    "date": "2021/09/20",
+    "dirName": "2021/G2/sento",
+    "raceName": "朝日セントライト記念(G2)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "9-2-5"
+  },
+  {
     "date": "2021/05/16",
     "dirName": "2021/G1/victoria",
     "raceName": "ヴィクトリアマイル(G1)",
@@ -457,6 +469,30 @@ const result =[
     "date": "2021/09/20",
     "dirName": "2021/G2/sento",
     "raceName": "朝日セントライト記念(G2)",
+    "tan": -1000,
+    "tan2": -1000,
+    "huku": -1000,
+    "wide3box": -1000,
+    "wide5box": -1000,
+    "3huku5box": -1000,
+    "1-2-3oddsRank": "9-2-5"
+  },
+  {
+    "date": "2021/09/26",
+    "dirName": "2021/G2/all",
+    "raceName": "産経賞オールカマー(G2)",
+    "tan": "",
+    "tan2": "",
+    "huku": "",
+    "wide3box": "",
+    "wide5box": "",
+    "3huku5box": "",
+    "1-2-3oddsRank": ""
+  },
+  {
+    "date": "2021/09/26",
+    "dirName": "2021/G2/koube",
+    "raceName": "神戸新聞杯(G2)",
     "tan": "",
     "tan2": "",
     "huku": "",
